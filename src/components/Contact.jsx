@@ -3,7 +3,6 @@ import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import contactme from "../assets/contactme.png";
-import VisitorCounter from "./Counter";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -145,7 +144,6 @@ const Contact = () => {
           />
         </div>
       </div>
-      <VisitorCounter />
     </section>
   );
 };
