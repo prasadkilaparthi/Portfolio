@@ -6,7 +6,7 @@ import profile from "../assets/profilepic1.svg";
 const Home = () => {
   return (
     <>
-      <section className="bg-indigo-200 py-24 " id='home'>
+      <section className="bg-indigo-200 py-24 " id="home">
         <div className="mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-16">
           {/* Left Column: Text Content */}
           <article className="order-2 md:order-1">
@@ -33,14 +33,18 @@ const Home = () => {
             </div>
             <div className="mt-8 flex gap-4">
               <a
-                href="https://drive.google.com/file/d/1EZlZZZI9OkoXNx1yHtZpWB21z9WLVg75/view?usp=drivesdk"
+                href="https://drive.google.com/file/document/1EZlZZZI9OkoXNx1yHtZpWB21z9WLVg75/view?usp=drivesdk"
                 className="bg-blue-500 text-white py-2 px-6 capitalize rounded-lg hover:bg-blue-800 transition duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Open CV
               </a>
               <a
-                href="https://drive.google.com/file/d/1EZlZZZI9OkoXNx1yHtZpWB21z9WLVg75/export?format=pdf"
+                href="https://drive.google.com/file/document/1EZlZZZI9OkoXNx1yHtZpWB21z9WLVg75/export?format=pdf"
                 className="bg-blue-500 text-white py-2 px-6 capitalize rounded-lg hover:bg-blue-800 transition duration-300"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Download CV
               </a>
