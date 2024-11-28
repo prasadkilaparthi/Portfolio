@@ -33,7 +33,7 @@ const Home = () => {
             </div>
             <div className="mt-8 flex gap-4">
               <a
-                href="https://drive.google.com/file/document/1EZlZZZI9OkoXNx1yHtZpWB21z9WLVg75/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1EZlZZZI9OkoXNx1yHtZpWB21z9WLVg75/view?usp=drivesdk"
                 className="bg-blue-500 text-white py-2 px-6 capitalize rounded-lg hover:bg-blue-800 transition duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -41,7 +41,7 @@ const Home = () => {
                 Open CV
               </a>
               <a
-                href="https://drive.google.com/file/document/1EZlZZZI9OkoXNx1yHtZpWB21z9WLVg75/export?format=pdf"
+                href="https://drive.google.com/file/d/1EZlZZZI9OkoXNx1yHtZpWB21z9WLVg75/export?format=pdf"
                 className="bg-blue-500 text-white py-2 px-6 capitalize rounded-lg hover:bg-blue-800 transition duration-300"
                 rel="noopener noreferrer"
                 target="_blank"
