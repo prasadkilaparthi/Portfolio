@@ -82,3 +82,22 @@ export const skills = [
     text: "Knowledge in GraphQL for designing and querying APIs that enable efficient, dynamic, and precise data retrieval, supporting scalable and flexible web application development.",
   },
 ];
+
+export const projects = [
+  {
+    id: nanoid(),
+    img: "https://images.pexels.com/photos/2148222/pexels-photo-2148222.jpeg?auto=compress&cs=tinysrgb&w=800", // Replace with appropriate image for task manager
+    url: "https://perso-task-manager.netlify.app/",
+    github: "https://github.com/prasadkilaparthi/react-personal-task-tracker",
+    title: "Personal Task Tracker",
+    text: "A task management application built using React and Tailwind CSS. This app allows users to manage their personal tasks efficiently, featuring an intuitive interface and real-time updates. It also includes capabilities for task tracking and management.",
+  },
+  {
+    id: nanoid(),
+    img: "src\\assets\\todo1.png", // Replace with appropriate image for task manager
+    url: "https://react-todo-eight-kappa.vercel.app/",
+    github: "https://github.com/prasadkilaparthi/react-todo",
+    title: "TO-DO List",
+    text: "A to-do app built with React and Tailwind CSS, allowing users to create, organize, and manage tasks efficiently. It features an intuitive interface with real-time updates, task prioritization, and filtering options.",
+  },
+];

@@ -3,7 +3,7 @@ import aboutPic from "../assets/aboutpic.png";
 
 const About = () => {
   return (
-    <section className="bg-indigo-200" id="about">
+    <section className="py-20 bg-indigo-200" id="about">
       <div className="align-element grid md:grid-cols-2 items-center gap-16">
         <img src={aboutPic} />
         <article>

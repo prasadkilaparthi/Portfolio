@@ -1,15 +1,16 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
-import profile from "../assets/profilepic.jpg";
+import profile from "../assets/profilepic1.svg";
 
 const Home = () => {
   return (
     <>
-      <section className="bg-indigo-200 py-24">
+      <section className="bg-indigo-200 py-24 " id='home'>
         <div className="mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-16">
-          <article>
-            <h1 className="text-5xl sm:text-7xl font-bold text-indigo-800">
+          {/* Left Column: Text Content */}
+          <article className="order-2 md:order-1">
+            <h1 className="text-5xl sm:text-7xl font-bold text-indigo-800 hover:motion-preset-compress motion-duration-1000 cursor-pointer">
               I'm Prasad
             </h1>
             <p className="mt-4 text-xl sm:text-3xl text-gray-800 tracking-wide">
@@ -45,8 +46,14 @@ const Home = () => {
               </a>
             </div>
           </article>
-          <article className="hidden md:block">
-            <img src={profile} className="h-80 lg:h-90 rounded-xl" />
+
+          {/* Right Column: Image */}
+          <article className="order-1  md:order-2">
+            <img
+              src={profile}
+              className="h-80 lg:h-90 rounded-xl mx-auto md:mx-0"
+              alt="Profile"
+            />
           </article>
         </div>
       </section>
