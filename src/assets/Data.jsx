@@ -88,8 +88,7 @@ export const projects = [
     id: nanoid(),
     img: "https://images.pexels.com/photos/2148222/pexels-photo-2148222.jpeg?auto=compress&cs=tinysrgb&w=800", // Replace with appropriate image for task manager
     url: "https://personal-task-tracker-seven.vercel.app/",
-
-    github: "https://github.com/prasadkilaparthi/react-personal-task-tracker",
+    github: "https://github.com/prasadkilaparthi/personal_task_tracker",
     title: "Personal Task Tracker",
     text: "A task management application built using React and Tailwind CSS. This app allows users to manage their personal tasks efficiently, featuring an intuitive interface and real-time updates. It also includes capabilities for task tracking and management.",
   },
