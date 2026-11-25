@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { personalInfo } from "../assets/Data";
+import { personalInfo, whatsappPresets } from "../assets/Data";
 import { 
   Mail, 
   Phone,
@@ -10,7 +10,11 @@ import {
   Copy, 
   Check, 
   CheckCircle2, 
-  AlertCircle 
+  AlertCircle,
+  MessageSquare,
+  ChevronDown,
+  ChevronUp,
+  Sparkles
 } from "lucide-react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
@@ -30,6 +34,11 @@ const Contact = () => {
 
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
+  const [selectedPreset, setSelectedPreset] = useState(whatsappPresets[0]?.id || "job");
+  const [customMessage, setCustomMessage] = useState(
+    whatsappPresets[0]?.message || "Hi Durga Prasad, I came across your portfolio and would like to connect with you."
+  );
+  const [showWhatsappOptions, setShowWhatsappOptions] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -224,33 +233,101 @@ const Contact = () => {
                       <span>Direct Call</span>
                     </a>
                     <a
-                      href={personalInfo.whatsapp}
+                      href={`https://wa.me/916304213633?text=${encodeURIComponent(customMessage)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 font-bold font-mono text-xs transition-all group"
+                      title="Launch WhatsApp Chat"
                     >
                       <FaWhatsapp className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform" />
                       <span>WhatsApp</span>
                     </a>
                   </div>
+
+                  {/* WhatsApp Message Presets Accordion */}
+                  <div className="pt-2.5 border-t border-white/5 space-y-2">
+                    <button
+                      type="button"
+                      onClick={() => setShowWhatsappOptions(!showWhatsappOptions)}
+                      className="w-full flex items-center justify-between py-1.5 px-2 rounded-lg hover:bg-dark-750/70 text-slate-300 hover:text-white transition-all text-[11px] font-mono group cursor-pointer"
+                    >
+                      <span className="flex items-center gap-1.5 text-emerald-400 font-medium">
+                        <MessageSquare className="w-3.5 h-3.5" />
+                        <span>Pre-written WhatsApp Messages ({whatsappPresets.length})</span>
+                      </span>
+                      {showWhatsappOptions ? (
+                        <ChevronUp className="w-3.5 h-3.5 text-slate-400 group-hover:text-white" />
+                      ) : (
+                        <ChevronDown className="w-3.5 h-3.5 text-slate-400 group-hover:text-white" />
+                      )}
+                    </button>
+
+                    {showWhatsappOptions && (
+                      <div className="p-3 rounded-xl bg-dark-900/90 border border-emerald-500/20 space-y-2.5">
+                        <div className="flex items-center justify-between text-[11px] font-mono text-slate-400">
+                          <span className="flex items-center gap-1 text-slate-300">
+                            <Sparkles className="w-3 h-3 text-emerald-400" />
+                            Choose topic:
+                          </span>
+                        </div>
+
+                        {/* Preset Option Chips */}
+                        <div className="grid grid-cols-2 gap-1.5">
+                          {whatsappPresets.map((preset) => {
+                            const isSelected = selectedPreset === preset.id;
+                            return (
+                              <button
+                                key={preset.id}
+                                type="button"
+                                onClick={() => {
+                                  setSelectedPreset(preset.id);
+                                  setCustomMessage(preset.message);
+                                }}
+                                className={`px-2.5 py-1.5 rounded-lg text-left text-[11px] font-mono transition-all cursor-pointer truncate flex items-center justify-between ${
+                                  isSelected
+                                    ? "bg-emerald-500/20 border border-emerald-400/60 text-white font-semibold shadow-[0_0_12px_rgba(52,211,153,0.15)]"
+                                    : "bg-dark-800/80 border border-white/5 text-slate-300 hover:bg-dark-750 hover:text-white"
+                                }`}
+                              >
+                                <span className="truncate">{preset.title}</span>
+                                {isSelected && (
+                                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 ml-1 shrink-0" />
+                                )}
+                              </button>
+                            );
+                          })}
+                        </div>
+
+                        {/* Editable Message Preview Box */}
+                        <div className="space-y-1">
+                          <textarea
+                            value={customMessage}
+                            onChange={(e) => setCustomMessage(e.target.value)}
+                            rows={2}
+                            className="w-full text-xs font-mono p-2.5 rounded-lg bg-dark-950 border border-white/10 text-neutral-200 focus:outline-none focus:border-emerald-400/60 leading-relaxed resize-none"
+                            placeholder="Type or personalize your WhatsApp message..."
+                          />
+                        </div>
+
+                        {/* Launch WhatsApp with this message */}
+                        <a
+                          href={`https://wa.me/916304213633?text=${encodeURIComponent(customMessage)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-bold font-mono text-xs transition-all shadow-md group"
+                        >
+                          <FaWhatsapp className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                          <span>Send on WhatsApp</span>
+                          <ArrowUpRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                        </a>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
 
-              {/* Social Channels List */}
+              {/* Social Channels List (Clean & Distinct) */}
               <div className="space-y-2.5 pt-4 border-t border-white/[0.08]">
-                <a
-                  href={personalInfo.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-3 rounded-xl bg-emerald-950/20 hover:bg-emerald-900/30 border border-emerald-500/20 hover:border-emerald-500/40 text-emerald-300 hover:text-emerald-200 transition-all text-xs font-mono group"
-                >
-                  <span className="flex items-center gap-2.5">
-                    <FaWhatsapp className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform" />
-                    <span>WhatsApp Chat ({personalInfo.phone})</span>
-                  </span>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-emerald-500 group-hover:text-emerald-300 transition-colors" />
-                </a>
-
                 <a
                   href={personalInfo.social.linkedin}
                   target="_blank"

@@ -1,7 +1,7 @@
 import React from "react";
 import { navigationLinks, personalInfo } from "../assets/Data";
-import { ArrowUp, Phone } from "lucide-react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { ArrowUp } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
@@ -41,26 +41,8 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Social & Contact Direct Actions */}
+          {/* Social Profiles */}
           <div className="flex items-center gap-2.5">
-            <a
-              href={`tel:${personalInfo.phoneRaw || "+916304213633"}`}
-              className="p-2 rounded-lg bg-dark-850 hover:bg-dark-800 border border-white/10 text-neutral-300 hover:text-accent transition-colors"
-              title={`Call ${personalInfo.phone}`}
-              aria-label="Call Mobile Number"
-            >
-              <Phone className="w-3.5 h-3.5" />
-            </a>
-            <a
-              href={personalInfo.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-dark-850 hover:bg-dark-800 border border-white/10 text-neutral-300 hover:text-emerald-400 transition-colors"
-              title={`WhatsApp ${personalInfo.phone}`}
-              aria-label="WhatsApp Chat"
-            >
-              <FaWhatsapp className="w-3.5 h-3.5" />
-            </a>
             <a
               href={personalInfo.social.github}
               target="_blank"
@@ -99,25 +81,12 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Credits & Contact Bar */}
+        {/* Bottom Credits */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-neutral-400 gap-4 text-center sm:text-left">
           <p>© {new Date().getFullYear()} Durga Prasad Kilaparthi. All rights reserved.</p>
-          <div className="flex items-center gap-3">
-            <a
-              href={`tel:${personalInfo.phoneRaw || "+916304213633"}`}
-              className="text-neutral-300 hover:text-accent transition-colors flex items-center gap-1.5"
-            >
-              <Phone className="w-3 h-3 text-accent" />
-              <span>{personalInfo.phone}</span>
-            </a>
-            <span className="text-white/20">•</span>
-            <a
-              href={`mailto:${personalInfo.email}`}
-              className="text-neutral-300 hover:text-accent transition-colors"
-            >
-              {personalInfo.email}
-            </a>
-          </div>
+          <p className="flex items-center gap-1.5 justify-center">
+            <span>Built with React, Vite & Tailwind CSS</span>
+          </p>
         </div>
       </div>
     </footer>
