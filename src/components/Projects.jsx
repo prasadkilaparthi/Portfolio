@@ -16,14 +16,14 @@ const Projects = () => {
           <div>
             <div className="flex items-center gap-2 font-mono text-xs text-accent uppercase tracking-wider mb-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              03 // Selected Works
+              Work & Applications
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-3d-chrome tracking-tight">
               Featured Projects
             </h2>
           </div>
-          <p className="font-mono text-sm text-neutral-400 max-w-md">
-            Production-oriented applications focused on responsive UX, clean state workflows, and modern web standards.
+          <p className="font-mono text-xs sm:text-sm text-slate-400 max-w-md">
+            Full-stack and frontend applications built to solve practical workflows with clean, responsive UX.
           </p>
         </div>
 

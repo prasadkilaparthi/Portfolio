@@ -43,7 +43,7 @@ const ProjectCard = ({ project, index }) => {
             <div className="flex items-center gap-2 mb-3">
               <span className="inline-flex items-center gap-1.5 font-mono text-xs text-accent uppercase tracking-wider font-semibold">
                 <Sparkles className="w-3.5 h-3.5" />
-                Featured Project // 0{index + 1}
+                Featured Project
               </span>
             </div>
 

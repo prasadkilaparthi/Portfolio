@@ -15,8 +15,8 @@ export const personalInfo = {
   fullName: "Durga Prasad Kilaparthi",
   preferredName: "Durga Prasad Kilaparthi",
   heroGreeting: "Hello, I'm Durga Prasad Kilaparthi",
-  headline: "Full-Stack Developer crafting high-performance, resilient web solutions.",
-  subheadline: `Specializing in React.js frontend engineering, scalable .NET backends, and modern API architectures with ${liveExperience.formatted} years of production experience at Capgemini.`,
+  headline: "Full-Stack Developer building fast, reliable enterprise web applications.",
+  subheadline: `Specializing in React.js frontend engineering, scalable .NET backends, and modern API development in the Enterprise B2B domain with ${liveExperience.formatted} years of production experience at Capgemini.`,
   experienceYears: liveExperience.formatted,
   joinedDate: "April 2023",
   profilePhoto: profilePhoto,
@@ -56,7 +56,7 @@ export const skillCategories = [
   },
   {
     category: "Backend & Systems",
-    description: "Robust server-side architecture, enterprise web APIs, and microservice patterns.",
+    description: "Robust server-side development, enterprise web APIs, and clean code patterns.",
     skills: [
       { name: "C# & .NET Core", level: "Proficient", desc: "Building scalable, high-performance web applications and backend services." },
       { name: "ASP.NET Core MVC", level: "Proficient", desc: "Enterprise B2B applications handling high-volume datasets in production." },
@@ -96,7 +96,7 @@ export const experienceTimeline = [
     summary:
       "Engineering end-to-end B2B enterprise applications handling high-volume datasets across React.js frontends and ASP.NET Core MVC backends.",
     points: [
-      "Architected and versioned RESTful Web APIs with middleware pipelines, input validation, and centralized error handling using SOLID principles and clean architecture.",
+      "Developed and versioned RESTful Web APIs with middleware pipelines, input validation, and centralized error handling using SOLID principles and clean architecture.",
       "Extended AG Grid with custom views, country-flag rendering, debounce search, pivoting, and column-level formulas for HP Technologies.",
       "Delivered GraphQL APIs using HotChocolate, eliminating API over-fetching by 40% and cutting latency by 25% for enterprise B2B consumers.",
       "Optimized frontend rendering by 30% using memoization, lazy loading, code splitting, and AG Grid virtualization across massive datasets.",

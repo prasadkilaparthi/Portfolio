@@ -92,14 +92,14 @@ const Contact = () => {
           <div>
             <div className="flex items-center gap-2 font-mono text-xs text-accent uppercase tracking-wider mb-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              05 // Let's Connect
+              Direct Communication
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-3d-chrome tracking-tight">
               Get In Touch
             </h2>
           </div>
-          <p className="font-mono text-sm text-neutral-400 max-w-md">
-            Open for full-stack engineering roles, collaborative projects, and architectural discussions.
+          <p className="font-mono text-xs sm:text-sm text-slate-400 max-w-md">
+            Let's discuss full-stack developer opportunities, software projects, or engineering roles.
           </p>
         </div>
 

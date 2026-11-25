@@ -23,14 +23,14 @@ const Experience = () => {
           <div>
             <div className="flex items-center gap-2 font-mono text-xs text-accent uppercase tracking-wider mb-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              04 // Trajectory & Milestones
+              Career & Track Record
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">
-              Experience & Journey
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-3d-chrome tracking-tight">
+              Work Experience
             </h2>
           </div>
-          <p className="font-mono text-sm text-neutral-400 max-w-md">
-            {personalInfo.experienceYears} years dedicated to building responsive interfaces and high-performance server architectures.
+          <p className="font-mono text-xs sm:text-sm text-slate-400 max-w-md">
+            Professional timeline, enterprise client deliverables at Capgemini, and continuous technical growth.
           </p>
         </div>
 
