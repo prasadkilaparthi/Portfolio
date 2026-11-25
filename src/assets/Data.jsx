@@ -1,4 +1,4 @@
-import todo1Img from "./todo1.png";
+import srkSolutionsImg from "./srksolutions.png";
 import profilePhoto from "./profilepic.jpg";
 import { liveExperience } from "../utils/experience";
 
@@ -16,7 +16,7 @@ export const personalInfo = {
   preferredName: "Durga Prasad Kilaparthi",
   heroGreeting: "Hello, I'm Durga Prasad Kilaparthi",
   headline: "Full-Stack Developer building fast, reliable enterprise web applications.",
-  subheadline: `Specializing in React.js frontend engineering, scalable .NET backends, and modern API development in the Enterprise B2B domain with ${liveExperience.formatted} years of production experience at Capgemini.`,
+  subheadline: `Specializing in React.js frontend engineering, scalable .NET backends, and modern API development with ${liveExperience.formatted} years of production experience at Capgemini.`,
   experienceYears: liveExperience.formatted,
   joinedDate: "April 2023",
   profilePhoto: profilePhoto,
@@ -168,21 +168,21 @@ export const projectsList = [
     ]
   },
   {
-    id: "react-todo-app",
-    title: "Minimalist TO-DO List",
-    subtitle: "Focused Daily Task Organizer",
+    id: "srk-solutions",
+    title: "SRK Solutions",
+    subtitle: "Pharma & Cleanroom Engineering Platform",
     description:
-      "A fast, distraction-free task management tool crafted in React and Tailwind CSS. Features dynamic task filtering, instant prioritization, quick completion toggles, and seamless user interaction designed for high daily throughput.",
-    tags: ["React", "Tailwind CSS", "Vite", "JavaScript", "UI Engineering"],
-    image: todo1Img,
-    url: "https://react-todo-eight-kappa.vercel.app/",
-    github: "https://github.com/prasadkilaparthi/react-todo",
+      "A commercial web platform engineered for SRK Solutions, an enterprise validation, calibration, and cleanroom infrastructure provider serving pharmaceutical facilities (including Hetero Drugs, Honour Labs, and Dasami Labs). Built with React and Tailwind CSS featuring dynamic service detail modals, scope verification checklists, and client acquisition workflows.",
+    tags: ["React.js", "Tailwind CSS", "JavaScript", "Vite", "Responsive UI", "Client Project"],
+    image: srkSolutionsImg,
+    url: "https://www.srksolutions.org/",
+    github: null,
     featured: true,
-    metrics: "Instant load • Zero friction",
+    metrics: "Production Live • B2B Pharma",
     highlights: [
-      "Instant task creation and live filtering by status",
-      "Distraction-free typography and clean visual feedback",
-      "Optimized lightweight bundle with instant responsiveness"
+      "Interactive service scope modals with technical detail checklists across 11 cleanroom & calibration disciplines",
+      "Tailored corporate brand architecture featuring deep navy/amber palette, trust pillars, and multi-section navigation",
+      "Frictionless customer inquiry flows with direct phone dialers, mail booking triggers, and client partner network showcase"
     ]
   },
 ];

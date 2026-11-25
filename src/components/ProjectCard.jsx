@@ -83,26 +83,28 @@ const ProjectCard = ({ project, index }) => {
           </div>
 
           {/* Action CTAs */}
-          <div className="flex items-center gap-4 pt-4 border-t border-white/[0.08]">
+          <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-white/[0.08]">
             <a
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-accent text-neutral-950 font-semibold text-xs sm:text-sm hover:bg-white hover:shadow-[0_0_20px_rgba(190,242,100,0.3)] transition-all duration-200"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-accent text-neutral-950 font-bold text-xs sm:text-sm hover:bg-white hover:shadow-[0_0_20px_rgba(190,242,100,0.3)] transition-all duration-200"
             >
-              <span>Live Application</span>
+              <span>Live Website</span>
               <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
             </a>
 
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-dark-800 hover:bg-dark-700 text-neutral-300 hover:text-white border border-white/10 font-mono text-xs sm:text-sm transition-all duration-200"
-            >
-              <FaGithub className="w-4 h-4" />
-              <span>Source</span>
-            </a>
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-dark-800 hover:bg-dark-700 text-neutral-300 hover:text-white border border-white/10 font-mono text-xs sm:text-sm transition-all duration-200"
+              >
+                <FaGithub className="w-4 h-4" />
+                <span>Source</span>
+              </a>
+            )}
           </div>
         </div>
       </div>

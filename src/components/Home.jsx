@@ -1,14 +1,13 @@
 import React from "react";
 import { personalInfo } from "../assets/Data";
-import { 
-  ArrowUpRight, 
-  Terminal, 
-  Code2, 
-  Cpu, 
-  Database, 
-  FileText, 
-  Download, 
-  CheckCircle2, 
+import {
+  ArrowUpRight,
+  Terminal,
+  Code2,
+  Cpu,
+  Database,
+  FileText,
+  Download,
   Sparkles,
   Layers
 } from "lucide-react";
@@ -50,7 +49,7 @@ const Home = () => {
 
       <div className="align-element relative z-10 w-full">
         <div className="max-w-2xl lg:max-w-3xl flex flex-col justify-center">
-          
+
           {/* Mobile-Only Dedicated High-Res Portrait Card (Visible on mobile & tablet, hidden on desktop) */}
           <div className="flex items-center gap-4 mb-6 lg:hidden animate-float-3d">
             <div className="relative shrink-0">
@@ -78,8 +77,6 @@ const Home = () => {
                 <span>Capgemini</span>
                 <span>•</span>
                 <span>{personalInfo.experienceYears} Yrs Exp</span>
-                <span>•</span>
-                <span className="text-sky-300">Enterprise B2B</span>
               </div>
             </div>
           </div>
@@ -92,10 +89,6 @@ const Home = () => {
             </span>
             <span className="font-mono text-xs text-slate-300 font-medium">
               {personalInfo.status}
-            </span>
-            <span className="text-slate-600 font-mono">•</span>
-            <span className="font-mono text-xs text-3d-lime font-bold">
-              Enterprise B2B Domain
             </span>
           </div>
 
@@ -119,7 +112,7 @@ const Home = () => {
             <span className="text-3d-lime font-bold underline decoration-accent/60 underline-offset-4">
               {personalInfo.experienceYears} years of experience
             </span>{" "}
-            at <span className="text-3d-cyan font-bold">Capgemini</span> in the <span className="text-slate-100 font-semibold">Enterprise B2B web domain</span>. Focused on developing fast, clean user interfaces with{" "}
+            at <span className="text-3d-cyan font-bold">Capgemini</span>. Focused on developing fast, clean user interfaces with{" "}
             <span className="text-3d-cyan font-bold">React.js</span>, reliable RESTful APIs with{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-purple-300 to-indigo-400 font-bold drop-shadow-sm">.NET Core</span>, and optimized database solutions in <span className="text-3d-emerald font-bold">SQL Server</span>.
           </p>
@@ -188,16 +181,16 @@ const Home = () => {
             </div>
 
             <div className="p-3.5 rounded-xl card-3d-glass card-3d-interactive animate-float-3d-delay-2 hover:border-slate-300/50 col-span-2 sm:col-span-1 cursor-default">
-              <div className="font-mono text-base sm:text-lg font-extrabold text-3d-chrome truncate">
-                HP & ADAPT
+              <div className="font-mono text-2xl sm:text-3xl font-extrabold text-3d-chrome truncate">
+                25%
               </div>
               <div className="text-[11px] font-mono uppercase tracking-wider text-slate-400 mt-0.5">
-                Client Platforms
+                Endpoint Latency Cut
               </div>
             </div>
           </div>
 
-          {/* Social Proof & 3D Pill Highlights */}
+          {/* Social Proof & Profiles */}
           <div className="mt-6 sm:mt-7 pt-5 sm:pt-6 border-t border-white/[0.08] flex flex-wrap items-center justify-between gap-4 max-w-xl">
             <div className="flex items-center gap-3">
               <span className="font-mono text-xs uppercase tracking-wider text-slate-400">
@@ -234,22 +227,10 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Quick Tech Highlights Badge */}
-            <div className="flex items-center gap-2.5 font-mono text-xs text-slate-300">
-              <span className="flex items-center gap-1 text-3d-cyan font-bold">
-                <CheckCircle2 className="w-3.5 h-3.5 text-sky-400" />
-                <span>React.js</span>
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-1 text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-purple-400 font-bold">
-                <CheckCircle2 className="w-3.5 h-3.5 text-purple-400" />
-                <span>.NET Core</span>
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-1 text-3d-emerald font-bold">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                <span>SQL Server</span>
-              </span>
+            {/* Enterprise Client Trust Tag */}
+            <div className="font-mono text-xs text-slate-400 flex items-center gap-2">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+              <span className="text-slate-300 font-medium">HP Technologies • ADAPT</span>
             </div>
           </div>
         </div>
