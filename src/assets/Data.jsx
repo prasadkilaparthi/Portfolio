@@ -24,7 +24,9 @@ export const personalInfo = {
   status: "Available for new opportunities",
   company: "Capgemini Technology Services",
   email: "kdurgaprasad285@gmail.com",
-  phone: "(+91) 6304213633",
+  phone: "+91 6304213633",
+  phoneRaw: "+916304213633",
+  whatsapp: "https://wa.me/916304213633",
   social: {
     github: "https://github.com/prasadkilaparthi",
     linkedin: "https://www.linkedin.com/in/durga-prasad-kilaparthi",
