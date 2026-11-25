@@ -10,10 +10,9 @@ import {
   Download, 
   CheckCircle2, 
   Sparkles,
-  Layers,
-  Phone
+  Layers
 } from "lucide-react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 
 const Home = () => {
@@ -143,7 +142,7 @@ const Home = () => {
               <span className="h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_8px_#bef264]" />
             </a>
 
-            {/* CV & Direct Call/WhatsApp Action Buttons */}
+            {/* CV Action Buttons */}
             <div className="flex items-center gap-2 ml-0 sm:ml-1">
               <a
                 href={personalInfo.cv.view}
@@ -164,24 +163,6 @@ const Home = () => {
                 aria-label="Download Resume"
               >
                 <Download className="w-4 h-4" />
-              </a>
-              <a
-                href={`tel:${personalInfo.phoneRaw || "+916304213633"}`}
-                className="p-3 rounded-xl card-3d-glass hover:bg-white/10 text-slate-300 hover:text-accent transition-colors"
-                title={`Direct Call: ${personalInfo.phone}`}
-                aria-label="Direct Phone Call"
-              >
-                <Phone className="w-4 h-4" />
-              </a>
-              <a
-                href={personalInfo.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl card-3d-glass hover:bg-emerald-500/10 text-slate-300 hover:text-emerald-400 transition-colors"
-                title={`WhatsApp Chat: ${personalInfo.phone}`}
-                aria-label="WhatsApp Chat"
-              >
-                <FaWhatsapp className="w-4 h-4 text-emerald-400" />
               </a>
             </div>
           </div>

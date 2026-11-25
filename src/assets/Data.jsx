@@ -26,7 +26,7 @@ export const personalInfo = {
   email: "kdurgaprasad285@gmail.com",
   phone: "+91 6304213633",
   phoneRaw: "+916304213633",
-  whatsapp: "https://wa.me/916304213633",
+  whatsapp: "https://wa.me/916304213633?text=Hi%20Durga%20Prasad%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.",
   social: {
     github: "https://github.com/prasadkilaparthi",
     linkedin: "https://www.linkedin.com/in/durga-prasad-kilaparthi",
@@ -42,6 +42,33 @@ export const personalInfo = {
     publicKey: "mro7Vnw2ft_hYJu-Y",
   },
 };
+
+export const whatsappPresets = [
+  {
+    id: "job",
+    tag: "Career / Hiring",
+    title: "Job Opportunity",
+    message: "Hi Durga Prasad, I came across your portfolio and would like to discuss a Full-Stack Developer opportunity with our team.",
+  },
+  {
+    id: "project",
+    tag: "Project / Contract",
+    title: "Project Discussion",
+    message: "Hi Durga Prasad, I have a web application project (React / .NET Core) and would like to discuss collaborating with you.",
+  },
+  {
+    id: "consultation",
+    tag: "Consultation",
+    title: "Tech Consultation",
+    message: "Hi Durga Prasad, I'd like to consult with you regarding enterprise web application architecture and API performance.",
+  },
+  {
+    id: "networking",
+    tag: "Networking",
+    title: "Say Hello",
+    message: "Hi Durga Prasad, I saw your developer portfolio and wanted to connect with you!",
+  },
+];
 
 export const skillCategories = [
   {

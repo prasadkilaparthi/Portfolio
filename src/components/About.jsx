@@ -164,22 +164,11 @@ const About = () => {
                   </span>
                 </div>
 
-                <div className="flex items-start justify-between gap-4 pb-2.5 border-b border-white/5">
+                <div className="flex items-start justify-between gap-4">
                   <span className="text-slate-400 uppercase tracking-wider">Location</span>
                   <span className="text-slate-200 font-semibold text-right">
                     India (Open to Relocation / Remote)
                   </span>
-                </div>
-
-                <div className="flex items-center justify-between gap-4">
-                  <span className="text-slate-400 uppercase tracking-wider">Direct Contact</span>
-                  <a
-                    href={`tel:${personalInfo.phoneRaw || "+916304213633"}`}
-                    className="text-accent hover:text-white font-bold text-right transition-colors hover:underline inline-flex items-center gap-1"
-                    title="Call Durga Prasad"
-                  >
-                    <span>{personalInfo.phone}</span>
-                  </a>
                 </div>
               </div>
 

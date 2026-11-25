@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { navigationLinks, personalInfo } from "../assets/Data";
-import { Menu, X, ArrowUpRight, FileDown, Phone } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa6";
+import { Menu, X, ArrowUpRight, FileDown } from "lucide-react";
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -79,16 +78,7 @@ const Header = () => {
         </nav>
 
         {/* Desktop CTA Buttons */}
-        <div className="hidden lg:flex items-center gap-2.5">
-          <a
-            href={`tel:${personalInfo.phoneRaw || "+916304213633"}`}
-            className="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-2 rounded-lg text-neutral-300 hover:text-white bg-dark-800/80 hover:bg-dark-700 border border-white/[0.08] hover:border-accent/30 transition-all"
-            title="Call +91 6304213633"
-          >
-            <Phone className="w-3.5 h-3.5 text-accent" />
-            <span className="hidden xl:inline">{personalInfo.phone}</span>
-          </a>
-
+        <div className="hidden lg:flex items-center gap-3">
           <a
             href={personalInfo.cv.view}
             target="_blank"
@@ -143,22 +133,6 @@ const Header = () => {
           </nav>
 
           <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-2.5">
-            <a
-              href={`tel:${personalInfo.phoneRaw || "+916304213633"}`}
-              className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-mono rounded-lg bg-dark-800 border border-white/10 text-neutral-200 hover:border-accent/40"
-            >
-              <Phone className="w-4 h-4 text-accent" />
-              <span>Call: {personalInfo.phone}</span>
-            </a>
-            <a
-              href={personalInfo.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-mono rounded-lg bg-emerald-950/30 border border-emerald-500/20 text-emerald-300 hover:bg-emerald-900/40"
-            >
-              <FaWhatsapp className="w-4 h-4 text-emerald-400" />
-              <span>WhatsApp: {personalInfo.phone}</span>
-            </a>
             <a
               href={personalInfo.cv.view}
               target="_blank"
