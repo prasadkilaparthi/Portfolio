@@ -37,10 +37,10 @@ const Skills = () => {
     },
     {
       title: "Backend Services & REST APIs",
-      badge: "Core Architecture",
+      badge: "Backend Engineering",
       icon: <SiDotnet className="w-6 h-6 text-purple-400" />,
-      tagline: "Scalable .NET Core Microservices",
-      description: "Architected versioned RESTful Web APIs on .NET Core with Clean Architecture, Repository Pattern, custom middleware pipelines, fluent validation, and centralized error handling.",
+      tagline: "Scalable .NET Core Web APIs",
+      description: "Developed and maintained versioned RESTful Web APIs on .NET Core with Clean Architecture, Repository Pattern, custom middleware pipelines, fluent validation, and centralized error handling.",
       tech: ["C#", ".NET Core", "ASP.NET MVC", "Entity Framework", "Clean Architecture"],
       accentBorder: "hover:border-purple-400/40"
     },
@@ -76,14 +76,14 @@ const Skills = () => {
           <div>
             <div className="flex items-center gap-2 font-mono text-xs text-accent uppercase tracking-wider mb-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_6px_#bef264]" />
-              02 // Technical Ecosystem
+              Technical Expertise
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-3d-chrome tracking-tight">
-              Tech Stack & Tooling
+              Skills & Technologies
             </h2>
           </div>
           <p className="font-mono text-xs sm:text-sm text-slate-400 max-w-md">
-            Technologies battle-tested across enterprise B2B production systems at Capgemini.
+            Frontend, backend, database, and testing tools I use daily to build production applications.
           </p>
         </div>
 

@@ -28,14 +28,14 @@ const About = () => {
           <div>
             <div className="flex items-center gap-2 font-mono text-xs text-accent uppercase tracking-wider mb-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_6px_#bef264]" />
-              01 // The Engineer & The Journey
+              Background & Story
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-3d-chrome tracking-tight">
               About Me
             </h2>
           </div>
           <p className="font-mono text-xs sm:text-sm text-slate-400 max-w-md">
-            Full-stack engineering background, enterprise deliverables, and craft focus.
+            My engineering journey, hands-on client deliverables at Capgemini, and how I build reliable software.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ const About = () => {
                   </span>
                 </div>
                 <p className="text-xs sm:text-[13.5px] text-slate-300 leading-relaxed font-light">
-                  Engineered enterprise data platforms using <span className="text-sky-300 font-medium">AG Grid Enterprise</span> in React with custom row virtualization, pivoting, and formulas across massive datasets. On the server side, architected scalable <span className="text-accent font-semibold">RESTful Web APIs</span> in .NET Core with clean middleware pipelines, input validation, and centralized error handling.
+                  Engineered enterprise data platforms using <span className="text-sky-300 font-medium">AG Grid Enterprise</span> in React with custom row virtualization, pivoting, and formulas across massive datasets. On the server side, developed scalable <span className="text-accent font-semibold">RESTful Web APIs</span> in .NET Core with clean middleware pipelines, input validation, and centralized error handling.
                 </p>
               </div>
 
@@ -89,7 +89,7 @@ const About = () => {
                   </span>
                 </div>
                 <p className="text-xs sm:text-[13.5px] text-slate-300 leading-relaxed font-light">
-                  Architected <span className="text-emerald-300 font-medium">HotChocolate GraphQL</span> APIs on .NET Core for B2B consumers, eliminating API over-fetching by <span className="text-accent font-mono font-bold">40%</span> and significantly accelerating critical endpoint response times.
+                  Developed <span className="text-emerald-300 font-medium">HotChocolate GraphQL</span> APIs on .NET Core for B2B consumers, eliminating API over-fetching by <span className="text-accent font-mono font-bold">40%</span> and significantly accelerating critical endpoint response times.
                 </p>
               </div>
             </div>

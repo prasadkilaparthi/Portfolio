@@ -78,18 +78,24 @@ const Home = () => {
                 <span>Capgemini</span>
                 <span>•</span>
                 <span>{personalInfo.experienceYears} Yrs Exp</span>
+                <span>•</span>
+                <span className="text-sky-300">Enterprise B2B</span>
               </div>
             </div>
           </div>
 
           {/* Desktop-Only Status Pill */}
-          <div className="hidden lg:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-3d-glass w-fit mb-5 shadow-sm">
+          <div className="hidden lg:inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full card-3d-glass w-fit mb-5 shadow-sm">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
             </span>
             <span className="font-mono text-xs text-slate-300 font-medium">
               {personalInfo.status}
+            </span>
+            <span className="text-slate-600 font-mono">•</span>
+            <span className="font-mono text-xs text-3d-lime font-bold">
+              Enterprise B2B Domain
             </span>
           </div>
 
@@ -99,10 +105,10 @@ const Home = () => {
             <span className="text-3d-lime">Durga Prasad Kilaparthi</span>.
             <span className="block mt-2 text-xl sm:text-2xl lg:text-3xl font-bold leading-snug">
               <span className="text-3d-chrome">
-                Architecting Resilient{" "}
+                Building High-Performance{" "}
               </span>
               <span className="text-3d-emerald">
-                Full-Stack Systems.
+                Web Applications.
               </span>
             </span>
           </h1>
@@ -113,9 +119,9 @@ const Home = () => {
             <span className="text-3d-lime font-bold underline decoration-accent/60 underline-offset-4">
               {personalInfo.experienceYears} years of experience
             </span>{" "}
-            at <span className="text-3d-cyan font-bold">Capgemini</span> specializing in building high-performance frontend interfaces with{" "}
-            <span className="text-3d-cyan font-bold">React.js</span>, scalable backend services with{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-purple-300 to-indigo-400 font-bold drop-shadow-sm">.NET Core</span>, and robust <span className="text-3d-emerald font-bold">SQL Server</span> database architectures.
+            at <span className="text-3d-cyan font-bold">Capgemini</span> in the <span className="text-slate-100 font-semibold">Enterprise B2B web domain</span>. Focused on developing fast, clean user interfaces with{" "}
+            <span className="text-3d-cyan font-bold">React.js</span>, reliable RESTful APIs with{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-purple-300 to-indigo-400 font-bold drop-shadow-sm">.NET Core</span>, and optimized database solutions in <span className="text-3d-emerald font-bold">SQL Server</span>.
           </p>
 
           {/* Primary & Secondary Action CTAs with 3D Tactile Styling */}
